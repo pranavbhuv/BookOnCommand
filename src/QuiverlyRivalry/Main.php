@@ -26,7 +26,7 @@ class Main extends PluginBase implements Listener
     {
         switch ($cmd->getName()) {
             case "book":
-                if ($sender->hasPermission("feed.command")) {
+                if ($sender->hasPermission("book.command")) {
                     if ($sender instanceof Player) {
                         $book = Item::get(Item::WRITTEN_BOOK, 0, 1);
                         $book->setTitle(C::GREEN . C::UNDERLINE . "Information Booklet");
