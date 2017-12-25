@@ -1,9 +1,15 @@
 name: BookOnJoin
-version: 0.1
+version: 0.2
 author: Quiverly
-api:
-- 3.0.0-ALPHA7
-- 3.0.0-ALPHA8
-- 3.0.0-ALPHA9
-- 3.0.0-ALPHA10
+api: [3.0.0-ALPHA8, 3.0.0-ALPHA9, 3.0.0-ALPHA10]
 main: QuiverlyRivalry\Main
+description: Gives a book on command!
+commands:
+ book:
+  description: Gives the book.
+  permission: book.command
+  usage: "/book"
+permissions:
+ book.command:
+  default: true
+  description: "/book command permission!"
