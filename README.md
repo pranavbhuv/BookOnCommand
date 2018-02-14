@@ -1,4 +1,9 @@
 # BookOnJoin
-When, a does the command /book, it gives them a predefined book! I will update it, too allow configs, when I learn it. Till den edit the main.php.
+When, a player does the command /book, it gives them a predefined book! 
+I will update it, too allow configs, when I learn it, until then edit the main.php.
+
+**Permission**: *book.command*
+
+**Command:** */book*
 
 Requested by @TBNRitzdoge
