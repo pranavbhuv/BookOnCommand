@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace InfoBook;
 
-use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
@@ -11,15 +10,14 @@ use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
 use pocketmine\item\Item;
 
-class Main extends PluginBase implements Listener{
+class Main extends PluginBase {
 
     public function onEnable() : void{
         $this->getLogger()->notice("InfoBook enabled!");
-        $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
-        switch($command->getName()){
+        switch(strtolower($command->getName())){
             case "book":
                 if(!$sender instanceof Player){
                     $sender->sendMessage(TextFormat::RED . "Use this command in-game!");
