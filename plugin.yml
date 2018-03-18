@@ -7,3 +7,6 @@ description: Gives a book on command!
 permissions:
  book.command:
   default: true
+commands:
+ book:
+  description: Gives the infobook
