@@ -1,7 +1,7 @@
 name: InfoBook
 version: 1.0
 author: QuiverlyRivalry
-api: [3.0.0-ALPHA10, 3.0.0-ALPHA11]
+api: 3.0.0
 main: InfoBook\Main
 description: Gives a book on command!
 permissions:
