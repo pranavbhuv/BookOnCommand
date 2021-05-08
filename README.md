@@ -5,5 +5,3 @@ I will update it, too allow configs, when I learn it, until then edit the main.p
 **Permission**: *book.command*
 
 **Command:** */book*
-
-Requested by @TBNRitzdoge
